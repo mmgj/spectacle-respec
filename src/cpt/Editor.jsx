@@ -28,7 +28,7 @@ export default function Editor({ label }) {
       {label && <PaneLabel label={label} />}
       <CodeEditor
         value={label == 'query' ? query : params}
-        language='js'
+        language='json'
         placeholder='GROQ query...'
         onKeyDown={handleGlobalKeyDown}
         onChange={(evn) =>

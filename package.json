@@ -1,5 +1,5 @@
 {
-  "name": "spectacle-2",
+  "name": "spectacles",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,7 +15,6 @@
     "@sanity/ui": "^2.1.4",
     "@uiw/react-textarea-code-editor": "^3.0.2",
     "is-hotkey": "^0.2.0",
-    "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",

@@ -13,7 +13,7 @@ export const defaultExample = `*[_type == 'article'] {
     "spectate":
       title
       + ": "
-      + "https://sanity.io/guide/"
+      + "https://sanity.io/docs/"
       + slug.current
   }`;
 

@@ -1,0 +1,72 @@
+/* SPLITPANE STYLES ⬇ */
+:root {
+  --border-color: rgba(255, 255, 255, 0);
+  --border-color-hover: rgba(0, 0, 0, 0.5);
+  --border-color-dark: rgba(0, 0, 0, 0.5);
+  --border-color-dark-hover: rgba(255, 255, 255, 0.5);
+  --background-color: #000;
+  --background-color-dark: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --border-color: rgba(0, 0, 0, 0);
+    --border-color-hover: rgba(255, 255, 255, 0.5);
+    --border-color-dark: rgba(255, 255, 255, 0.5);
+    --border-color-dark-hover: rgba(0, 0, 0, 0.5);
+    --background-color: #fff;
+    --background-color-dark: #000;
+  }
+}
+
+.Resizer {
+  background: var(--background-color);
+  opacity: 0.2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.Resizer.horizontal {
+  height: 11px;
+  margin: -5px 0;
+  border-top: 5px solid var(--border-color);
+  border-bottom: 5px solid var(--border-color);
+  cursor: row-resize;
+  width: 100%;
+}
+
+.Resizer.horizontal:hover {
+  border-top: 5px solid var(--border-color-hover);
+  border-bottom: 5px solid var(--border-color-hover);
+}
+
+.Resizer.vertical {
+  width: 11px;
+  margin: 0 -5px;
+  border-left: 5px solid var(--border-color);
+  border-right: 5px solid var(--border-color);
+  cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+  border-left: 5px solid var(--border-color-hover);
+  border-right: 5px solid var(--border-color-hover);
+}
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+/* EOF SPLITPANE */

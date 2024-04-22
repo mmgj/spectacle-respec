@@ -14,7 +14,6 @@ export default function Editor({ label }) {
   const prefersDark = usePrefersDark();
 
   const handleGlobalKeyDown = useCallback((event) => {
-    // TODO: Figure out how to block input in editors on hotkey
     if (isHotkey('mod+return', event)) {
       event.preventDefault();
       event.stopPropagation();
@@ -27,7 +26,7 @@ export default function Editor({ label }) {
     <Card height='fill'>
       {label && <PaneLabel label={label} />}
       <CodeEditor
-        value={label == 'query' ? query : params}
+        value={label === 'query' ? query : params}
         language='json'
         placeholder='GROQ query...'
         onKeyDown={handleGlobalKeyDown}

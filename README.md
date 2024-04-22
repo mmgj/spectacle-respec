@@ -1,6 +1,6 @@
 # Spectacle
 
-Standalone app to query any [Sanity](https://www.sanity.io) project. Heavily inspired by the official [Sanity Vision plugin](https://www.sanity.io/plugins/vision). Run locally to query any project/dataset (assuming you know the appropriate localhost port to use.)
+Standalone app to query any [Sanity](https://www.sanity.io) project using [GROQ](https://groq.dev). Heavily inspired by the official [Sanity Vision plugin](https://www.sanity.io/plugins/vision). Run it locally to query any project/dataset (assuming you know the appropriate localhost port to use.)
 
 - [Vite](https://vitejs.dev/)
 - [Sanity UI](https://github.com/sanity-io/ui)

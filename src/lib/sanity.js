@@ -21,7 +21,6 @@ export async function loadData({
     // eslint-disable-next-line no-eval
     const parameters = eval(`( ${params} )`);
     const queryResult = await client.fetch(query, parameters);
-    console.log('queryResult: ', queryResult);
 
     dispatch({ type: 'setResult', payload: queryResult });
     dispatch({ type: 'setLoading', payload: false });
